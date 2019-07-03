@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="syle.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<section class="waxom-main">
@@ -20,8 +21,8 @@
 					<a class="waxom-nav-item" href="#">Partners</a>
 				</div>
 				<div class="burger-menu_button">
-				<span class="burger-menu_lines"></span>
-			</div>
+					<span class="burger-menu_lines"></span>
+				</div>
 			</div>
 			<div class="waxom-main-block">
 				
@@ -199,7 +200,7 @@
 																</div>
 															</div>
 														</section>
-														<section class="waxom-stats">
+														<section id="counts" class="waxom-stats">
 															<div class="container">
 																<div class="waxom-stats-block">
 																	<div class="waxom-stats-item">
@@ -281,23 +282,7 @@
 																</div>
 															</div>
 														</footer>
-														<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 	 
-														<script>
-															$(".tab_item").not(":first").hide();
-															$(".wrapper .tab").click(function() {
-																$(".wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-																$(".tab_item").hide().eq($(this).index()).fadeIn()
-															}).eq(0).addClass("active");</script>
-															<script>$('.waxom-stats-counter').each(function(){
-																$(this).prop('Counter',0).animate({
-																	Counter:$(this).text()
-																},{
-																	duration:4000,
-																	easing: 'swing',
-																	step:function(now){
-																		$(this).text(Math.ceil(now));
-																	}
-																})
-															})</script>
+														<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+														<script src="common.js"></script>	 
 														</body>
 														</html>
